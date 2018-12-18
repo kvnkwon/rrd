@@ -1,0 +1,67 @@
+.page-report {
+
+  .report-status {
+    margin: 2em 0;
+
+    .posted, .in-progress {
+      font-weight: 700;
+    }
+
+    .posted {
+      color: $brandColorPop;
+    }
+
+    .in-progress {
+      color: $brandColorHighlight;
+    }
+  }
+
+  .reports {
+    .table {
+      border: 1px solid #E4E8F0;
+      box-shadow: $TRShadow;
+      margin-bottom: 5em;
+
+      td, th {
+        vertical-align: middle;
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+    }
+
+    tbody {
+      td {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        border-bottom: 1px solid #E4E8F0;
+
+        .reveal-icon {
+          margin: 0 0.4rem;
+        }
+      }
+
+      .posted {
+        color: $brandColorPop;
+      }
+    }
+
+    @include mqBelow($tabletlg) {
+      display: none;
+    }
+  }
+
+  .reports-mobile {
+    .in-progress-tabs {
+      margin-top: 2.5em;
+    }
+
+
+    .posting-status {
+      float: none;
+    }
+
+    .incomplete {
+      fill: $brandColorHighlight;
+    }
+  }
+}

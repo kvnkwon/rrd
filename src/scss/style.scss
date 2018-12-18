@@ -18,6 +18,7 @@
 //----------------------------------*/
 
 @import 'partials/_header.scss';
+@import 'partials/_hero.scss';
 @import 'partials/_nav.scss';
 @import 'partials/_sidebar.scss';
 @import 'partials/_main.scss';
@@ -32,14 +33,23 @@
 @import 'modules/_lists.scss';
 @import 'modules/_typography.scss';
 @import 'modules/_misc.scss';
-@import 'modules/_app.scss';
+
 
 // Enhancement modules
-@import 'modules/_breakpoints.scss';
+@import 'modules/media-query.scss';
 @import 'modules/_print.scss';
+
+@import 'modules/_app.scss';
 
 //----------------------------------*\
 // VENDOR
 //----------------------------------*/
 
 @import 'vendor/_external.scss';
+//----------------------------------*\
+// CUSTOM
+//----------------------------------*/
+
+@import 'page-index.scss';
+@import 'page-report.scss';
+@import 'page-profile.scss';

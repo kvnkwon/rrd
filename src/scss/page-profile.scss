@@ -1,0 +1,75 @@
+.page-profile {
+
+  padding-bottom: 5em;
+
+  section {
+    margin: 2em 0;
+  }
+
+  .notifications {
+    margin-top: 4em;
+    @include mqBelow($tabletlg) {
+      margin-top: 0;
+    }
+  }
+
+  .card-large {
+    margin-top: 2em;
+
+    @include mqBelow($tabletlg) {
+      margin-top: 0;
+      border: 0;
+      box-shadow: none;
+      padding: 0 !important;
+    }
+  }
+
+  .account-status-notice {
+
+    max-width: 60%;
+
+    .card {
+      background-color: $gray10;
+      border: 0;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      color: $gray;
+
+      .expiration-date {
+        font-weight: 700;
+      }
+    }
+
+    @include mqBelow($tabletlg) {
+      margin-top: -2.5em;
+      max-width: 100%;
+    }
+
+  }
+
+  .signout-control {
+    margin-top: 1.5em;
+  }
+
+  @include mqBelow($tabletlg) {
+
+    .signout-control {
+      text-align: center;
+    }
+
+    hr {
+      display: none;
+    }
+  }
+
+  @include mqAbove($tabletlg) {
+    .card {
+      border: 0;
+      box-shadow: none;
+    }
+
+    .collapse {
+      display: block;
+    }
+  }
+}

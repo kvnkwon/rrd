@@ -1,0 +1,20 @@
+//common media query breakpoints
+$mobile: 420;
+$tabletsm: 600;
+$tabletlg: 836;
+$mobileNavBreakpoint: 856;
+$laptop: 1024;
+$desktop: 1400;
+$widescreen: 1650;
+
+@mixin mqAbove($screenSize) {
+    @media screen and (min-width: $screenSize+px) { @content; }
+}
+
+@mixin mqBelow($screenSize) {
+    @media screen and (max-width: ($screenSize - 1)+px) { @content; }
+}
+
+@mixin mqBetween($screenSize1, $screenSize2) {
+    @media screen and (min-width: $screenSize1+px) and (max-width: ($screenSize2 - 1)+px) { @content; }
+}

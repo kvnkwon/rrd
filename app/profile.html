@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>ResumeRabbit</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link href="//ajax.googleapis.com" rel="dns-prefetch">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.min.css" rel="stylesheet">
+
+    <script src="assets/components/modernizr/modernizr.js"></script>
+  </head>
+  <body class="page-profile">
+    <header class="hero">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#"><img class="logo" src="assets/img/logo-resumerabbit-inverse.svg" alt="ResumeRabbit"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="mx-2 pt-2 nav-item">
+                <a class="nav-link" href="#">Posting Report</a>
+              </li>
+              <li class="mx-2 pt-2 nav-item">
+                <a class="nav-link" href="#">Inbox</a>
+              </li>
+              <li class="mx-2 pt-2 nav-item">
+                <a class="nav-link" href="#">Support</a>
+              </li>
+              <li class="mx-2 pt-2 nav-item">
+                <a class="nav-link" href="#">My Profile</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section class="header-content">
+          <h1>Account Settings</h1>
+        </section>
+      </div>
+    </header>
+
+    <div class="container-fluid card-large">
+      <div class="account-status-notice">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">
+              <img src="assets/img/icon-calendar_clock.svg" alt="">
+              Your account will be active until:
+            </p>
+            <p class="card-text expiration-date">September 20, 2019</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="account-info">
+        <p class="section-label">Account info</p>
+        <div class="card card-accordion">
+          <div class="card-body">
+            <div class="card-title" data-toggle="collapse" href="#collapseEmail" role="button" aria-expanded="false" aria-controls="collapseEmail">
+              <p>Update email address</p>
+              <img src="assets/img/icon-caret-down.svg" alt="">
+            </div>
+            <div class="collapse"  id="collapseEmail">
+              <form>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter new email">
+                </div>
+                <button type="submit" class="btn btn-outline">Update</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="card card-accordion">
+          <div class="card-body">
+            <div class="card-title" data-toggle="collapse" href="#collapsePassword" role="button" aria-expanded="false" aria-controls="collapsePassword">
+              <p>Change password</p>
+              <img src="assets/img/icon-caret-down.svg" alt="">
+            </div>
+            <div class="collapse"  id="collapsePassword">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input type="password" class="form-control" id="new-password" placeholder="Enter new password">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="password" class="form-control" id="new-password-confirm" placeholder="Confirm new password">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-outline">Update</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="notifications">
+        <p class="section-label">Notifications</p>
+        <div class="card card-accordion">
+          <div class="card-body">
+            <div class="card-title" data-toggle="collapse" href="#collapseNotifications" role="button" aria-expanded="false" aria-controls="collapseNotifications">
+              <p>Modify notification preferences</p>
+              <img src="assets/img/icon-caret-down.svg" alt="">
+            </div>
+            <div class="collapse"  id="collapseNotifications">
+              <form>
+                <div class="form-group">
+                  <select class="form-control" id="notification-pref">
+                    <option>Daily</option>
+                    <option>Weekly</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-outline">Update</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="signout-control">
+        <button class="btn btn-lg btn-danger signout">Sign out</button>
+      </div>
+
+    </div>
+
+
+    <script src="assets/components/jquery/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.min.js"></script>
+
+
+  </body>
+</html>

@@ -1,3 +1,58 @@
 $base : #F7F6F0;
 $darken : darken(#F7F6F0 , 30%);
 $back: darken(#F7F6F0, 40%);
+
+/// Slightly lighten a color
+@function tint($color, $percentage) {
+	@return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+@function shade($color, $percentage) {
+	@return mix(black, $color, $percentage);
+}
+
+//use these ONLY for alert/discount and confirmation, brand-agnostic uses.
+$red: #ff0035;
+$orange: #ff5e00;
+$gold: #ffcc00;
+$yellow: #ffff00;
+$green: #0ed265;
+
+//brand colors
+$brandColorLight: #6682FD !default; //default to TopResume blue
+$brandColorDark: #2844BF !default; //default to TopResume dark blue
+$brandColorPop: #59D3BB !default; //default to TopResume orange
+$brandColorHighlight: #EE8D49 !default; //default to yellow
+$brandColorHighlightInverse: #0356ff !default; //default to bright blue
+
+$white: white !default;
+$black: #202124 !default;
+
+//shades of gray
+$gray:   #626e86; //lighten(desaturate($brandColorDark, 51.5%), 26%)
+$gray3:  tint(saturate($gray, 20%), 97%);
+$gray5:  tint(saturate($gray, 20%), 95%);
+$gray10: tint(saturate($gray, 20%), 90%);
+$gray15: tint(saturate($gray, 20%), 85%);
+$gray20: tint(saturate($gray, 20%), 80%);
+$gray25: tint(saturate($gray, 20%), 75%);
+$gray30: tint(saturate($gray, 20%), 70%);
+$gray35: tint(saturate($gray, 20%), 65%);
+$gray40: tint(saturate($gray, 20%), 60%);
+$gray45: tint(saturate($gray, 20%), 55%);
+$gray50: tint($gray, 50%);
+$gray55: tint($gray, 45%);
+$gray60: tint($gray, 40%);
+$gray65: tint($gray, 35%);
+$gray70: tint($gray, 30%);
+$gray75: tint($gray, 25%);
+$gray80: tint($gray, 20%);
+$gray85: tint($gray, 15%);
+$gray90: tint($gray, 10%);
+$gray95: tint($gray, 5%);
+
+//shadows
+$TRHoverShadow: 0 9px 20px -8px rgba($black, 0.3) !default;
+$TRShadow: 0 5px 30px -7px rgba($black, 0.15) !default;
+$TRShadowSm: 0 5px 11px -7px rgba($black, 0.2) !default;

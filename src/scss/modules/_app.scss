@@ -1,0 +1,114 @@
+h1, h2, h3 {
+  font-family: 'TexGyre-Bold', Helvetica, Arial, serif;
+}
+
+h4, h5, p, a, button, label, .form-control {
+  @include sansStack;
+}
+
+.header-content {
+  color: #fff;
+}
+
+.card, .card-large {
+  border: 1px solid $gray5;
+  box-shadow: $TRShadow;
+}
+
+.card-large {
+  background-color: #fff;
+  padding: 2em !important;
+}
+
+.section-label {
+  color: $gray85;
+  letter-spacing: 0.1em;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+}
+
+.btn {
+  text-transform: uppercase;
+  padding: 0.5em 1.5em;
+  @include sansStack;
+}
+
+.btn-primary {
+  background-color: $brandColorLight;
+  border-color: $brandColorLight;
+}
+
+.btn-danger {
+  background-color: $brandColorHighlight;
+  border-color: $brandColorHighlight;
+}
+
+.btn-outline {
+  color: $brandColorLight;
+  border-color: $brandColorLight;
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: $brandColorLight;
+  color: #fff;
+}
+
+.form-control {
+  border-color: $gray15;
+  height: 100%;
+  padding: 1rem;
+}
+
+select.form-control {
+	height: 3.5rem;
+}
+
+.card-accordion {
+  margin: 2em 0;
+  padding-bottom: 2em;
+
+  .card-body {
+    padding: 0;
+  }
+
+  .card-title {
+    margin-bottom: 0;
+
+    img {
+      display: none;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  form {
+    padding-top: 2em;
+    max-width: 60%;
+  }
+
+  @include mqBelow($tabletlg) {
+    padding: 0;
+    margin: 1em 0;
+
+    .card-body {
+      padding: 1.25rem 0.5rem;
+    }
+
+    form {
+      max-width: 100%;
+    }
+
+    .card-title {
+      p, img {
+        display: inline-block;
+      }
+
+      img {
+        float: right;
+      }
+    }
+  }
+}
