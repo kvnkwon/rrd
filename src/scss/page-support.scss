@@ -1,5 +1,36 @@
 .page-support {
+
+  .card {
+    .card-body {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   .faq {
     margin-top: 2em;
+  }
+
+  .contact {
+    margin-top: 2em;
+  }
+
+  .spacer {
+    padding-top: 1.5em;
+  }
+
+  .card-title {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .question {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .answer {
+    background-color: $gray5;
+    padding: 1em 0.5rem;
   }
 }

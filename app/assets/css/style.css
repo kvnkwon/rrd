@@ -380,7 +380,7 @@ textarea {
 
 .hero {
   background-image: linear-gradient(-180deg, #532BC2 0%, #2D1277 100%);
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   width: 100%; }
 
 nav {
@@ -474,6 +474,8 @@ body {
 
 .header-content {
   color: #fff; }
+  .header-content h1 {
+    margin-bottom: 0.3em; }
 
 .card, .card-large {
   border: 1px solid #f6f7fa;
@@ -659,5 +661,27 @@ select.form-control {
     margin-right: auto;
     display: block; }
 
+.page-support .card .card-body {
+  padding-left: 0;
+  padding-right: 0; }
+
 .page-support .faq {
   margin-top: 2em; }
+
+.page-support .contact {
+  margin-top: 2em; }
+
+.page-support .spacer {
+  padding-top: 1.5em; }
+
+.page-support .card-title {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+
+.page-support .question {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+
+.page-support .answer {
+  background-color: #f6f7fa;
+  padding: 1em 0.5rem; }
