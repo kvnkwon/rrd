@@ -1,5 +1,7 @@
 .page-report {
 
+  padding-bottom: 5em;
+
   .report-status {
     margin: 2em 0;
 
@@ -20,7 +22,7 @@
     .table {
       border: 1px solid #E4E8F0;
       box-shadow: $TRShadow;
-      margin-bottom: 5em;
+      margin-bottom: 0;
 
       td, th {
         vertical-align: middle;
@@ -62,6 +64,10 @@
 
     .incomplete {
       fill: $brandColorHighlight;
+    }
+
+    @include mqAbove($tabletlg) {
+      display: none;
     }
   }
 }
